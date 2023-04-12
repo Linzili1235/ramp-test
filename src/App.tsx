@@ -20,8 +20,6 @@ export function App() {
   )
 
   const loadAllTransactions = useCallback(async () => {
-    console.log("paginatedData", paginatedTransactions?.data)
-    console.log("trainData", transactionsByEmployee)
     setIsLoading(true)
     transactionsByEmployeeUtils.invalidateData()
 
