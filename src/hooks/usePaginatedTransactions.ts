@@ -21,7 +21,6 @@ export function usePaginatedTransactions(): PaginatedTransactionsResult {
       if (response === null || previousResponse === null) {
         return response
       }
-      console.log("what is data", response.data)
 
       return { data: response.data, nextPage: response.nextPage }
     })
